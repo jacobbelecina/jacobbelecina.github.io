@@ -5,16 +5,58 @@
 	<meta charset="utf-8" >
     <title>Resume</title>
     <style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+	
+		.navbar{
+			width: 100%;
+			height: 55px;
+			margin: auto;
+			display: block;
+			align-items: center;
+		}
+	
+		nav{
+			flex: 1;
+			padding-left: 60px;
+			background: rgba(0,0,0,0.4);
+		}
+
+		.navbar li{
+			list-style: none;
+			margin: 0 20px;
+			display: inline-block;
+			line-height: 80px;
+		}
+
+		li a{
+			font-size: 20px;
+			font-family: 'Quicksand', sans-serif;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover:not(.active){
+			background-color: #111;
+		}
+
+		.active{
+			background-color: #4a919e ;
+			color: #f2f2f2;
+		}	
 	
 		body{
 			background: linear-gradient(to bottom left, #b9d5d5 30%, #74b2b7  60%); 
 		}
 		
 		.resume{
-			width: 1000px;
+			width: auto;
 			height:100%;
 			background: #fff;
-			margin: 25px auto;
+			margin: 25px;
 		}
 		
 		.heading {
@@ -64,6 +106,7 @@
 		.list{
 			font-size: 1.25em;
 			line-height:180%;
+			margin: 20px;
 		}
 		
 		.personal{
@@ -81,6 +124,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Josefin+Sans&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:wght@500&family=Nunito:wght@900&family=Quicksand:wght@700&family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -88,7 +132,27 @@
 	<link rel="stylesheet" type="text/css">
 	<!--BELECINA, RHENIEL JACOB M.-->
     <!--02.17.2021-->
-
+	<div class = "navbar">
+		<nav>
+			<ul>
+				<li><a class="active" href="../Belecina_LANDING PAGE_ITAD.html">Home</a></li>
+				<li><a href ="../Belecina_ABOUTME_ITAD/BELECINA_ABOUTME_ITAD.html" target = "sameWindow" title = "About Me">
+				About Me</a></li>
+				<li><a href ="../Belecina_MY BEAT_ITAD/Belecina_MY BEAT_ITAD.html" target = "sameWindow" title = "My Beat">
+				My Beat</a></li>
+				<li><a href ="../Belecina_MY KIND OF FILM_ITAD/Belecina_MY KIND OF FILM_ITAD.html" target = "sameWindow" title = "My Kind of Film">
+				My Kind of Film</a></li>
+				<li><a href ="../Belecina_PHOTOGALLERY_ITAD/BELECINA_PhotoGallery_ITAD.html" target = "sameWindow" title = "Photo Gallery">
+				Photo Gallery</a></li>
+				<li><a href ="../Belecina_DREAM DESTINATION_ITAD/Belecina_ImageMap_ITAD.html" target = "sameWindow" title = "Dream Destination">
+				Dream Destination</a></li>
+				<li><a href ="../Belecina_RESUME_ITAD/BELECINA_RESUME_ITAD.html" target = "sameWindow" title = "RESUME">
+				Resume</a></li>
+			</ul>
+		</nav>
+	</div>
+	<br>
+	<br>
 	<div class="resume">
 		<div class="heading">
 			<img src="resume.JPG" alt="picture" width="153" height="153" style= "float: right;">
@@ -246,4 +310,3 @@
 </div>	
 </body>
 </html>
-	
