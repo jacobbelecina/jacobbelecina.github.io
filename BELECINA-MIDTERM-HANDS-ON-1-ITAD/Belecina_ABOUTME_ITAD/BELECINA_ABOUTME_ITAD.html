@@ -4,11 +4,56 @@
     <meta charset="utf-8" >
     <title>Me: Stories of My Life</title>
     <style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		
 		body{
 			background: linear-gradient(to bottom left, #0cb3b3 10%,  #b2d8d8  10%); 
 			font-size:1.750em
 		}
+		
+		.navbar{
+			width: 100%;
+			height: 55px;
+			margin: auto;
+			display: block;
+			align-items: center;
+			
+		}
+	
+		nav{
+			flex: 1;
+			padding-left: 60px;
+			background: rgba(0,0,0,0.4);
+		
+		}
 
+		li{
+			list-style: none;
+			margin: 0 20px;
+			display: inline-block;
+			line-height: 80px;
+		}
+
+		li a{
+			font-size: 20px;
+			font-family: 'Quicksand', sans-serif;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover:not(.active){
+			background-color: #111;
+		}
+
+		.active{
+			background-color: #4a919e ;
+			color: #f2f2f2;
+		}
+		
 		h1{
 			font-family: 'DM Serif Display', serif;
 			text-align:center;
@@ -36,7 +81,7 @@
 
 		hr{
 			border: 7px solid #167D7F;
-			width: 99%;
+			width: auto;
 		}
 		
 		p{
@@ -48,6 +93,7 @@
 			word-spacing: 7px;
 			padding: 20px;
 			color: #116263;
+			margin: 20px;
 		}
 		
 		.three{
@@ -161,12 +207,16 @@
 		.link a:hover, .link a:active {
 			background-color: #0b666e;
 			color: white;
+		}
+		
+
 
     </style>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href='https://fonts.googleapis.com/css?family=DM Serif Display' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:wght@500&family=Nunito:wght@900&family=Quicksand:wght@700&family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -175,17 +225,41 @@
     <!--BELECINA, RHENIEL JACOB-->
     <!--2.02.2021-->
 	
+	<div class = "navbar">
+		<nav>
+			<ul>
+				<li><a class="active" href="../Belecina_LANDING PAGE_ITAD.html">Home</a></li>
+				<li><a href ="../Belecina_ABOUTME_ITAD/BELECINA_ABOUTME_ITAD.html" target = "sameWindow" title = "About Me">
+				About Me</a></li>
+				<li><a href ="../Belecina_MY BEAT_ITAD/Belecina_MY BEAT_ITAD.html" target = "sameWindow" title = "My Beat">
+				My Beat</a></li>
+				<li><a href ="../Belecina_MY KIND OF FILM_ITAD/Belecina_MY KIND OF FILM_ITAD.html" target = "sameWindow" title = "My Kind of Film">
+				My Kind of Film</a></li>
+				<li><a href ="../Belecina_PHOTOGALLERY_ITAD/BELECINA_PhotoGallery_ITAD.html" target = "sameWindow" title = "Photo Gallery">
+				Photo Gallery</a></li>
+				<li><a href ="../Belecina_DREAM DESTINATION_ITAD/Belecina_ImageMap_ITAD.html" target = "sameWindow" title = "Dream Destination">
+				Dream Destination</a></li>
+				<li><a href ="../Belecina_RESUME_ITAD/BELECINA_RESUME_ITAD.html" target = "sameWindow" title = "RESUME">
+				Resume</a></li>
+			</ul>
+		</nav>
+	</div>
+	<br>
+	<br>
 	<h1>Me: Stories of My Life</h1>
+	<br>
 	<div class = "link">
 		<a href="#Childhood" title="Childhood Years Anchor">Childhood Years</a>&nbsp;&nbsp;&nbsp;
 		<a href="#Teenage" title="Teenage Years Anchor">Teenage Years</a>&nbsp;&nbsp;&nbsp;
 		<a href="#College" title="College Years Anchor">College Years</a>&nbsp;&nbsp;&nbsp;
 	</div>
-	
+	<br>
 	<hr>
+	<br>
 	<h2 id="Childhood">Childhood Years</h2>
+	<br>
 	<hr>
-	
+	<br>
 	<a href="img0.3.jpg" target="_blank">
 	<img src="img0.3.jpg" alt="Selfie" style="float: left" title="Selfie when in Church" width= "300" height="300" class="img4">
 	</a>
@@ -232,8 +306,11 @@
 
 
 	<hr>
+	<br>
 	<h2 id="Teenage">Teenage Years</h2>
+	<br>
 	<hr>
+	<br>
 
 	<div align="justify">
 		<a href="img1.1.jpg" target="_blank">
@@ -289,8 +366,11 @@
 
 
 	<hr>
+	<br>
 	<h2 id="College">College Years</h2>
+	<br>
 	<hr>
+	<br>
 	
 	<div class="responsive">
 		<div class="gallery">
@@ -349,10 +429,10 @@
 		I also feel laziness today because of our situation have.<sup>19</sup>
 		However, I will do my best to pass all the subjects this semester.<sup>20</sup>
 		</p></blockquote></blockquote>
-		<br>
 	</div>
 
 	<a href="#top"><p class="noIndent">Go Top</p></a>
-	
+	<hr>
+	<br>
 </body>
 </html>
