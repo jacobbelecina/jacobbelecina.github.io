@@ -1,575 +1,581 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html  lang="en">
 <head>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-  <script src="https://kit.fontawesome.com/7ddd49c721.js" crossorigin="anonymous"></script>
-	<style>
-	* {
-		box-sizing: border-box;
-	}
-
-	body{
-		font-family: 'Quicksand', sans-serif;
-	  
-	}
-
-	 .wrapper{
-		position: relative;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		width: auto;
-		box-shadow: 0 1px 20px 0 rgba(69,90,100,0,0.08);
-	  }
-
-	.wrapper .left{
-		width: 50%;
-		padding: 30px 25px;
-		border-top-left-radius: 5px;
-		border-bottom-left-radius: 5px;
-		text-align: center;
-		color: #fff;
-			}
-	.wrapper .right{
-		width: 300%;
-		background-color:#bee2fa;
-		border-top-right-radius: 5px;
-		border-bottom-right-radius: 5px;
-		padding: 30px 25px;
+	<meta charset="utf-8" >
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://kit.fontawesome.com/7ddd49c721.js" crossorigin="anonymous"></script>
+	<title>Order Form</title>
+		 <style type="text/css">
+			* {
+				box-sizing: border-box;
 			}
 
+			body{
+				font-family: 'Quicksand', sans-serif;
+			  
+			}
 
-	input[type=text], select, textarea {
-		width: 100%;
-		padding: 15px;
-		border: 5px solid #ccc;
-		border-radius: 4px;
-		resize: vertical;
-	}
-	
-	.sl{
-		width: 10%;
-	}
-	
-	label {
-	  padding: 15px 15px 15px 0;
-	  display: inline-block;
-	  font-size: 20px;
-	}
+			 .wrapper{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				width: auto;
+				box-shadow: 0 1px 20px 0 rgba(69,90,100,0,0.08);
+			  }
 
-	.button {
-		font-family: 'Crete Round', serif;
-		  position: relative;
-		  background-color: #003380;
-		  border: none;
-		  font-size: 16px;
-		  color: #FFFFFF;
-		  padding: 20px;
-		  width: 200px;
-		  text-align: center;
-		  transition-duration: 0.4s;
-		  text-decoration: none;
-		  overflow: hidden;
-		  cursor: pointer;
-	}
-
-	.button:hover {
-		background-color: #6caad4;
-		color: white;
-	}
+			.wrapper .left{
+				width: 50%;
+				padding: 30px 25px;
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+				text-align: center;
+				color: #fff;
+					}
+			.wrapper .right{
+				width: 300%;
+				background-color:#bee2fa;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				padding: 30px 25px;
+					}
 
 
-	.button:active:after {
-	  padding: 0;
-	  margin: 0;
-	  opacity: 1;
-	  transition: 0s
-	}
-	
-	.btn {
-	  font-family: 'Crete Round', serif;
-	  position: relative;
-	  background-color: #cc2900;
-	  border: none;
-	  font-size: 16px;
-	  color: #FFFFFF;
-	  padding: 20px;
-	  width: 200px;
-	  text-align: center;
-	  cursor: pointer;
-	}
+			input[type=text], select, textarea {
+				width: 100%;
+				padding: 15px;
+				border: 5px solid #ccc;
+				border-radius: 4px;
+				resize: vertical;
+			}
+			
+			.sl{
+				width: 10%;
+			}
+			
+			label {
+			  padding: 15px 15px 15px 0;
+			  display: inline-block;
+			  font-size: 20px;
+			}
 
-	.btn:hover {
-		 background-color: #ff9580;
-		color: white;
-	}
+			.button {
+				font-family: 'Crete Round', serif;
+				  position: relative;
+				  background-color: #003380;
+				  border: none;
+				  font-size: 16px;
+				  color: #FFFFFF;
+				  padding: 20px;
+				  width: 200px;
+				  text-align: center;
+				  transition-duration: 0.4s;
+				  text-decoration: none;
+				  overflow: hidden;
+				  cursor: pointer;
+			}
 
-	.btn:active:after {
-	  padding: 0;
-	  margin: 0;
-	  opacity: 1;
-	  transition: 0s
-	}
+			.button:hover {
+				background-color: #6caad4;
+				color: white;
+			}
 
-	.container {
-	  border-radius: 5px;
-	  background-color: #2483ab;
-	  padding: 20px;
-	}
 
-	.col-25 {
-	  color: white;
-	  float: left;
-	  width: 25%;
-	  margin-top: 6px;
-	}
+			.button:active:after {
+			  	padding: 0;
+				margin: 0;
+				opacity: 1;
+				transition: 0s
+			}
+			
+			.btn {
+			  font-family: 'Crete Round', serif;
+			  position: relative;
+			  background-color: #cc2900;
+			  border: none;
+			  font-size: 16px;
+			  color: #FFFFFF;
+			  padding: 20px;
+			  width: 200px;
+			  text-align: center;
+			  cursor: pointer;
+			}
 
-	.col-75 {
-	  float: left;
-	  width: 75%;
-	  margin-top: 6px;
-	  
-	}
-	
-	.col-75 .img{
-	  width: 100px;
-	  height: 100px;
-	}
+			.btn:hover {
+				background-color: #ff9580;
+				color: white;
+			}
 
-	/* Clear floats after the columns */
-	.row:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
+			.btn:active:after {
+			  padding: 0;
+			  margin: 0;
+			  opacity: 1;
+			  transition: 0s
+			}
 
-	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-	@media screen and (max-width: 600px) {
-	  .col-25, .col-75, .wrapper, .wrapper .left, .wapper .right {
-		width: 100%;
-		margin-top: 0;
-	  }
-	}
-	</style>
+			.container {
+			  border-radius: 5px;
+			  background-color: #2483ab;
+			  padding: 20px;
+			}
+
+			.col-25 {
+			  color: white;
+			  float: left;
+			  width: 25%;
+			  margin-top: 6px;
+			}
+
+			.col-75 {
+			  float: left;
+			  width: 75%;
+			  margin-top: 6px;
+			  
+			}
+			
+			.col-75 .img{
+			  width: 100px;
+			  height: 100px;
+			}
+
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+			@media screen and (max-width: 600px) {
+			  .col-25, .col-75, .wrapper, .wrapper .left, .wapper .right {
+				width: 100%;
+				margin-top: 0;
+			  }
+			}
+			</style>
 </head>
 <body>
-<div class="wrapper">
-  <div class = "left" style ="background: url('BELECINA_IMAGES_ITAD/burger.gif') center;">
-	</div>
+<body>
+	<!--BELECINA, RHENIEL JACOB M.-->
+    <!--04.04.2021-->
+	<div class="wrapper">
+		<div class = "left" style ="background: url('BELECINA_IMAGES_ITAD/burger.gif') center;">
+		</div>
 
-<div class="right">
-  <div class="container">
-    <b><h1 style="color:white; font-size: 60px; text-align: center; font-family: 'Staatliches', cursive; letter-spacing: 10px; 
-	background:#0d3f61;">Customer Information</h1></b>
-    <form action="/action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="fname"><i class="fas fa-user"> Full Name :</i></label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Enter your complete name..">
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-25">
-        <label for="lname"><i class="fas fa-map-marker-alt"></i><b> Complete Address: </b></label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Enter your complete address here..">
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-25">
-        <label for="lname"><i class="fas fa-phone-alt">  Contact Number: </i></label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Enter your contact number here..">
-      </div>
-    </div>
-   
-   <div class="row">
-      <div class="col-25">
-        <label for="lname"><i class="fas fa-envelope"> Email Address: </i></label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Enter your email address here..">
-      </div>
-    </div>
-   
-    <div class="row">
-      <div class="col-25">
-        <label for="subject"><i class="fas fa-map-marked-alt"> How to Get There?</i></label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Enter the direction here.." style="height:200px"></textarea>
-      </div>
-    </div>
-	<br>
-	<hr style=" border: 7px solid #bcdef5;">
-	<b><h1 style="color:white; font-size: 60px; text-align: center; font-family: 'Staatliches', cursive; letter-spacing: 10px; 
-	background:#0d3f61;">Order Form</h1></b>
-	
-	<div class="row">
-      <div class="col-25">
-        <label for="subject" style="font-size:30px; margin-left:10px;"><b> Order :</b> </label>
-      </div>
-       <div class="col-75">
-		<img class="img" src ="BELECINA_IMAGES_ITAD/burger.png">
-        <label class="cb" style="color:white;">Burger
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/spag.png">
-		<label class="cb" style="color:white;">Pasta
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/fries.png">
-		<label class="cb" style="color:white;">Fries
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/drinks.png">
-		<label class="cb" style="color:white;">Drinks
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-	
-	<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
-	<i class="fas fa-hamburger"> BURGERS</i></h2></b>
-	
-	<div class="row">
-      <div class="col-25">
-        <label for="subject" style="font-size:30px; margin-left:10px;"><b> No. of Patty: </b></label>
-      </div>
-       <div class="col-75">
-		<img class="img" src ="BELECINA_IMAGES_ITAD/single.png">
-        <label class="cb" style="color:white;">Single Patty
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/double.png">
-		<label class="cb" style="color:white;">Double Patty
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-    <br>
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Adds On: </b></label>
-      </div>
-       <div class="col-75">
-        <label class="cb" style="color:white;">Cheese
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Coleslaw
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Tomato
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Onion
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Cucumber
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Bacon
-		  <input type="checkbox">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-	<br>
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Choice of Bun: </b></label>
-      </div>
-       <div class="col-75">
-	   <img class="img" src ="BELECINA_IMAGES_ITAD/white.png">
-        <label class="cb" style="color:white;">White Bun
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/wheat.png">
-		<label class="cb" style="color:white;">Wheat Bun
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Quantity: </b></label>
-      </div>
-      <div class="col-75">
-        <select class="sl" id="Quantity" name="Quantity" >
-          <option value="one">1</option>
-          <option value="two">2</option>
-          <option value="three">3</option>
-		  <option value="four">4</option>
-		  <option value="five">5</option>
-		  <option value="six">6</option>
-		  <option value="seven">7</option>
-		  <option value="eight">8</option>
-		  <option value="nine">9</option>
-		  <option value="ten">10</option>
-        </select>
-      </div>
-    </div>
-	
-	<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
-	<i class="fas fa-utensils"> PASTA</i></h2></b>
-	
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Select Sauce: </b></label>
-      </div>
-       <div class="col-75">
-	   <img class="img" src ="BELECINA_IMAGES_ITAD/carbo.png">
-        <label class="cb" style="color:white;">Carbonara
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/pesto.png">
-		<label class="cb" style="color:white;">Pesto
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/spag.png">
-		<label class="cb" style="color:white;">Spaghetti
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<br><img class="img" src ="BELECINA_IMAGES_ITAD/salsa.png">
-		<label class="cb" style="color:white;">Salsa
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/amet.png">
-		<label class="cb" style="color:white;">Amatriciana
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/pomodoro.png">
-		<label class="cb" style="color:white;">Pomodoro
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-	
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Pasta Per Box: </b></label>
-      </div>
-      <div class="col-75">
-        <select class="sl" id="Quantity" name="Quantity" >
-          <option value="one">1</option>
-          <option value="two">2</option>
-          <option value="three">3</option>
-		  <option value="four">4</option>
-		  <option value="five">5</option>
-		  <option value="six">6</option>
-		  <option value="seven">7</option>
-		  <option value="eight">8</option>
-		  <option value="nine">9</option>
-		  <option value="ten">10</option>
-        </select>
-      </div>
-    </div>
-	
-	<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
-	<i class="fas fa-french-fries"> FRIES</i></h2></b>
-	
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b>Size :</b></label>
-      </div>
-       <div class="col-75">
-	   <img class="img" src ="BELECINA_IMAGES_ITAD/smallf.png">
-        <label class="cb" style="color:white;">Small
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/mediumf.png">
-		<label class="cb" style="color:white;">Medium
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/bff.png">
-		<label class="cb" style="color:white;">Large
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-	
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Flavor :</b></label>
-      </div>
-       <div class="col-75">
-        <label class="cb" style="color:white;">BBQ
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Cheese
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Sour Cream
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-	
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b>Fries per Pack: </b></label>
-      </div>
-      <div class="col-75">
-        <select class="sl" id="Quantity" name="Quantity" >
-          <option value="one">1</option>
-          <option value="two">2</option>
-          <option value="three">3</option>
-		  <option value="four">4</option>
-		  <option value="five">5</option>
-		  <option value="six">6</option>
-		  <option value="seven">7</option>
-		  <option value="eight">8</option>
-		  <option value="nine">9</option>
-		  <option value="ten">10</option>
-        </select>
-      </div>
-    </div>
-	
-	<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
-	<i class="fas fa-beer"> DRINKS</i></h2></b>
-	
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Select Drink: </b></label>
-      </div>
-       <div class="col-75">
-		<img class="img" src ="BELECINA_IMAGES_ITAD/coke.png">
-		<label class="cb" style="color:white;">Coke
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/sprite.png">
-		<label class="cb" style="color:white;">Sprite
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/MD.png">
-		<label class="cb" style="color:white;">Mountain Dew
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<br><img class="img" src ="BELECINA_IMAGES_ITAD/pepsi.png">
-		<label class="cb" style="color:white;">Pepsi
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/nestea.png">
-		<label class="cb" style="color:white;">Nestea
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<img class="img" src ="BELECINA_IMAGES_ITAD/pine.png">
-		<label class="cb" style="color:white;">Pineapple
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<br><img class="img" src ="BELECINA_IMAGES_ITAD/beer.png">
-		<label class="cb" style="color:white;">Root Beer
-		  <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Size : </b></label>
-      </div>
-       <div class="col-75">
-        <label class="cb" style="color:white;">Small
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Medium
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Large
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-	
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Quantity: </b></label>
-      </div>
-      <div class="col-75">
-        <select class="sl" id="Quantity" name="Quantity" >
-          <option value="one">1</option>
-          <option value="two">2</option>
-          <option value="three">3</option>
-		  <option value="four">4</option>
-		  <option value="five">5</option>
-		  <option value="six">6</option>
-		  <option value="seven">7</option>
-		  <option value="eight">8</option>
-		  <option value="nine">9</option>
-		  <option value="ten">10</option>
-        </select>
-      </div>
-    </div>
-	
-	<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
-	<i class="fas fa-motorcycle"> DELIVERY</i></h2></b>
-	<div class="row">
-      <div class="col-25">
-         <label for="subject" style="font-size:30px; margin-left:10px;"><b> Delivery: </b></label>
-      </div>
-       <div class="col-75">
-        <label class="cb" style="color:white;">Self Pick-Up
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-		<label class="cb" style="color:white;">Delivery
-		 <input type="radio" name="radio">
-		  <span class="checkmark"></span>
-		</label>
-      </div>
-    </div>
-	
-    <br>
-    <div class="row">
-      <input type="submit" class="btn" value="Submit">
-	  <input type="reset" class="button"  value="Clear">
+		<div class="right">
+			<div class="container">
+				
+				<b><h1 style="color:white; font-size: 60px; text-align: center; font-family: 'Staatliches', cursive; letter-spacing: 10px; 
+				background:#0d3f61;">Customer Information</h1></b>
+				
+				<form action="/action_page.php">
+					<div class="row">
+						<div class="col-25">
+							<label for="fname"><i class="fas fa-user"> Full Name :</i></label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="fname" name="firstname" placeholder="Enter your complete name..">
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-25">
+							<label for="lname"><i class="fas fa-map-marker-alt"></i><b> Complete Address: </b></label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="lname" name="lastname" placeholder="Enter your complete address here..">
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-25">
+							<label for="lname"><i class="fas fa-phone-alt">  Contact Number: </i></label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="lname" name="lastname" placeholder="Enter your contact number here..">
+						</div>
+					</div>
+				   
+				   <div class="row">
+						<div class="col-25">
+							<label for="lname"><i class="fas fa-envelope"> Email Address: </i></label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="lname" name="lastname" placeholder="Enter your email address here..">
+						</div>
+					</div>
+				   
+					<div class="row">
+					  <div class="col-25">
+						<label for="subject"><i class="fas fa-map-marked-alt"> How to Get There?</i></label>
+					  </div>
+					  <div class="col-75">
+						<textarea id="subject" name="subject" placeholder="Enter the direction here.." style="height:200px"></textarea>
+					  </div>
+					</div>
+					<br>
+					<hr style=" border: 7px solid #bcdef5;">
+					<b><h1 style="color:white; font-size: 60px; text-align: center; font-family: 'Staatliches', cursive; letter-spacing: 10px; 
+					background:#0d3f61;">Order Form</h1></b>
+					
+					<div class="row">
+					  <div class="col-25">
+						<label for="subject" style="font-size:30px; margin-left:10px;"><b> Order :</b> </label>
+					  </div>
+					   <div class="col-75">
+						<img class="img" src ="BELECINA_IMAGES_ITAD/burger.png">
+						<label class="cb" style="color:white;">Burger
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/spag.png">
+						<label class="cb" style="color:white;">Pasta
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/fries.png">
+						<label class="cb" style="color:white;">Fries
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/drinks.png">
+						<label class="cb" style="color:white;">Drinks
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div>
+					
+					<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
+					<i class="fas fa-hamburger"> BURGERS</i></h2></b>
+					
+					<div class="row">
+					  <div class="col-25">
+						<label for="subject" style="font-size:30px; margin-left:10px;"><b> No. of Patty: </b></label>
+					  </div>
+					   <div class="col-75">
+						<img class="img" src ="BELECINA_IMAGES_ITAD/single.png">
+						<label class="cb" style="color:white;">Single Patty
+						 <input type="radio" name="radio">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/double.png">
+						<label class="cb" style="color:white;">Double Patty
+						 <input type="radio" name="radio">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div>
+					<br>
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Adds On: </b></label>
+					  </div>
+					   <div class="col-75">
+						<label class="cb" style="color:white;">Cheese
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Coleslaw
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Tomato
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Onion
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Cucumber
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Bacon
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div>
+					<br>
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Choice of Bun: </b></label>
+					  </div>
+					   <div class="col-75">
+					   <img class="img" src ="BELECINA_IMAGES_ITAD/white.png">
+						<label class="bun" style="color:white;">White Bun
+						 <input type="radio" name="bun">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/wheat.png">
+						<label class="bun" style="color:white;">Wheat Bun
+						 <input type="radio" name="bun">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Quantity: </b></label>
+					  </div>
+					  <div class="col-75">
+						<select class="sl" id="Quantity" name="Quantity" >
+						  <option value="one">1</option>
+						  <option value="two">2</option>
+						  <option value="three">3</option>
+						  <option value="four">4</option>
+						  <option value="five">5</option>
+						  <option value="six">6</option>
+						  <option value="seven">7</option>
+						  <option value="eight">8</option>
+						  <option value="nine">9</option>
+						  <option value="ten">10</option>
+						</select>
+					  </div>
+					</div>
+					
+					<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
+					<i class="fas fa-utensils"> PASTA</i></h2></b>
+					
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Select Sauce: </b></label>
+					  </div>
+					   <div class="col-75">
+					   <img class="img" src ="BELECINA_IMAGES_ITAD/carbo.png">
+						<label class="cb" style="color:white;">Carbonara
+						  <input type="radio" name="pasta">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/pesto.png">
+						<label class="cb" style="color:white;">Pesto
+						  <input type="radio" name="pasta">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/spag.png">
+						<label class="cb" style="color:white;">Spaghetti
+						  <input type="radio" name="pasta">
+						  <span class="checkmark"></span>
+						</label>
+						<br><img class="img" src ="BELECINA_IMAGES_ITAD/salsa.png">
+						<label class="cb" style="color:white;">Salsa
+						  <input type="radio" name="pasta">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/amet.png">
+						<label class="cb" style="color:white;">Amatriciana
+						  <input type="radio" name="pasta">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/pomodoro.png">
+						<label class="cb" style="color:white;">Pomodoro
+						  <input type="radio" name="pasta">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div>
+					
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Pasta Per Box: </b></label>
+					  </div>
+					  <div class="col-75">
+						<select class="sl" id="Quantity" name="Quantity" >
+						  <option value="one">1</option>
+						  <option value="two">2</option>
+						  <option value="three">3</option>
+						  <option value="four">4</option>
+						  <option value="five">5</option>
+						  <option value="six">6</option>
+						  <option value="seven">7</option>
+						  <option value="eight">8</option>
+						  <option value="nine">9</option>
+						  <option value="ten">10</option>
+						</select>
+					  </div>
+					</div>
+					
+					<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
+					<i class="fas fa-french-fries"> FRIES</i></h2></b>
+					
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b>Size :</b></label>
+					  </div>
+					   <div class="col-75">
+					   <img class="img" src ="BELECINA_IMAGES_ITAD/smallf.png">
+						<label class="cb" style="color:white;">Small
+						 <input type="radio" name="size">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/mediumf.png">
+						<label class="cb" style="color:white;">Medium
+						 <input type="radio" name="size">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/bff.png">
+						<label class="cb" style="color:white;">Large
+						 <input type="radio" name="size">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div>
+					
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Flavor :</b></label>
+					  </div>
+					   <div class="col-75">
+						<label class="cb" style="color:white;">BBQ
+						 <input type="radio" name="flavor">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Cheese
+						 <input type="radio" name="flavor">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Sour Cream
+						 <input type="radio" name="flavor">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div>
+					
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b>Fries per Pack: </b></label>
+					  </div>
+					  <div class="col-75">
+						<select class="sl" id="Quantity" name="Quantity" >
+						  <option value="one">1</option>
+						  <option value="two">2</option>
+						  <option value="three">3</option>
+						  <option value="four">4</option>
+						  <option value="five">5</option>
+						  <option value="six">6</option>
+						  <option value="seven">7</option>
+						  <option value="eight">8</option>
+						  <option value="nine">9</option>
+						  <option value="ten">10</option>
+						</select>
+					  </div>
+					</div>
+					
+					<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
+					<i class="fas fa-beer"> DRINKS</i></h2></b>
+					
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Select Drink: </b></label>
+					  </div>
+					   <div class="col-75">
+						<img class="img" src ="BELECINA_IMAGES_ITAD/coke.png">
+						<label class="cb" style="color:white;">Coke
+						  <input type="radio" name="drinks">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/sprite.png">
+						<label class="cb" style="color:white;">Sprite
+						  <input type="radio" name="drinks">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/MD.png">
+						<label class="cb" style="color:white;">Mountain Dew
+						  <input type="radio" name="drinks">
+						  <span class="checkmark"></span>
+						</label>
+						<br><img class="img" src ="BELECINA_IMAGES_ITAD/pepsi.png">
+						<label class="cb" style="color:white;">Pepsi
+						  <input type="radio" name="drinks">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/nestea.png">
+						<label class="cb" style="color:white;">Nestea
+						  <input type="radio" name="drinks">
+						  <span class="checkmark"></span>
+						</label>
+						<img class="img" src ="BELECINA_IMAGES_ITAD/pine.png">
+						<label class="cb" style="color:white;">Pineapple
+						  <input type="radio" name="drinks">
+						  <span class="checkmark"></span>
+						</label>
+						<br><img class="img" src ="BELECINA_IMAGES_ITAD/beer.png">
+						<label class="cb" style="color:white;">Root Beer
+						  <input type="radio" name="drinks">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Size : </b></label>
+					  </div>
+					   <div class="col-75">
+						<label class="cb" style="color:white;">Small
+						 <input type="radio" name="sizes">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Medium
+						 <input type="radio" name="sizes">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Large
+						 <input type="radio" name="sizes">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div>
+					
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Quantity: </b></label>
+					  </div>
+					  <div class="col-75">
+						<select class="sl" id="Quantity" name="Quantity" >
+						  <option value="one">1</option>
+						  <option value="two">2</option>
+						  <option value="three">3</option>
+						  <option value="four">4</option>
+						  <option value="five">5</option>
+						  <option value="six">6</option>
+						  <option value="seven">7</option>
+						  <option value="eight">8</option>
+						  <option value="nine">9</option>
+						  <option value="ten">10</option>
+						</select>
+					  </div>
+					</div>
+					
+					<b><h2 style="color:white; font-size: 40px; text-align: center; background: #1b5e7a; letter-spacing:10px;">
+					<i class="fas fa-motorcycle"> DELIVERY</i></h2></b>
+					<div class="row">
+					  <div class="col-25">
+						 <label for="subject" style="font-size:30px; margin-left:10px;"><b> Delivery: </b></label>
+					  </div>
+					   <div class="col-75">
+						<label class="cb" style="color:white;">Self Pick-Up
+						 <input type="radio" name="deliver">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="cb" style="color:white;">Delivery
+						 <input type="radio" name="deliver">
+						  <span class="checkmark"></span>
+						</label>
+					  </div>
+					</div><br>
+					
+					<div class="row">
+					  <input type="submit" class="btn" value="Submit">
+					  <input type="reset" class="button"  value="Clear">
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
-    </form>
-  </div>
-</div>
-</div>
 </body>
 </html>
